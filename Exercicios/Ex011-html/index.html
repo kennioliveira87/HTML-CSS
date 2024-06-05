@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cursoemvideo.ico" type="image/x-icon">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas:</h1>
+    <hr>
+    <p>Tente abrir esse site em vários dispositivos difentes ou simplismente aumente e diminua o tamanho de seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo Áudio:</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5.</p>
+    <audio src="midia/Imaginarium .mp3" controls autoplay></audio>
+    <!-- MP3, WAV, OGG -->
+
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/Imaginarium .mp3" type="audio/mpeg">
+        <source src="midia/Imaginarium .mp3" type="audio/ogg">
+        <source src="midia/Imaginarium .mp3" type="audio/wav">
+        <p>Infelismente seu navegador não consegui reproduzir áudio.</p>
+    </audio>
+</body>
+</html>
