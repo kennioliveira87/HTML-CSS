@@ -20,8 +20,15 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(168, 168, 168);
+        }
+
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(85, 85, 85);
             color: white;
         }
 
@@ -32,6 +39,14 @@
         td.posiçao {
             text-align: center;
         }
+
+        tbody > tr:nth-child(odd) {
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
     </style>
 </head>
 <body>
@@ -40,6 +55,7 @@
     <!-- 
     ANATOMIA DAS TABELAS
     TABLE
+        CAPITION
         THEAD
             TR, TD, TH 
         TBODY
@@ -49,17 +65,18 @@
     -->
 
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>posição</th>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col" style="width: 50px;">posição</th>
+                <th scope="col">Estados</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row" style="width: 100px;">Total de Habitantes</th>
                 <td></td>
                 <td class="num"><strong>203 062 512</strong></td>
             </tr>
