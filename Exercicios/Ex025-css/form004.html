@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cursoemvideo.ico" type="image/x-icon">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário:</h1>
+    <form action="cadastro.php" method="get" autocomplete="on"></form>
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <p>
+            <form action="inome" method="get">Nome:</form>
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="imail">E-Mail</label>
+            <input type="email" name="imail" id="E-Mail">
+        </p>
+        <p>
+            <label for="itel">Telefone:</label>
+            <input type="tel" name="tel" id="itel">
+        </p>
+    </fieldset>
+    <!-- Estudar mais sobre RegEx!!! -->
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</body>
+</html>
